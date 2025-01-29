@@ -26,7 +26,7 @@ function countH(string) {
   let count = 0;
   for (let str of string) {
     for (let char of str) {
-      if (char.toLowerCase() === " ") {
+      if (char.toLowerCase() === "h") {
         count++;
       }
     }
