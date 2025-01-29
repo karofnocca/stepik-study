@@ -1,22 +1,22 @@
 "use strict";
 
 // alg #1
-// var num = [13, 345, 1, 234, 23, 2, 3, 6, 5, 4567, 32, 45, 5, 43, 10];
-// const target = 5;
+var num = [13, 345, 1, 234, 23, 2, 3, 6, 5, 4567, 32, 45, 5, 43, 10];
+const target = 5;
 
-// function finalSum(num, target) {
-//   const seenNumbers = new Set();
-//   for (let number of num) {
-//     const secondNum = target - number;
-//     if (seenNumbers.has(secondNum)) {
-//       return [secondNum, number];
-//     }
-//     seenNumbers.add(number);
-//   }
-//   return null;
-// }
+function finalSum(num, target) {
+  const seenNumbers = new Set();
+  for (let number of num) {
+    const secondNum = target - number;
+    if (seenNumbers.has(secondNum)) {
+      return [secondNum, number];
+    }
+    seenNumbers.add(number);
+  }
+  return null;
+}
 
-// finalSum(num, target);
+finalSum(num, target);
 
 //alg #2 if we need find count of "h"
 
@@ -52,12 +52,12 @@ function countH(string) {
 
 // alg #3
 
-// var arr = [1, 2, 3, 5, 6, 7, 8];
+var arr = [1, 2, 3, 5, 6, 7, 8];
 
-// function getArrayLength(arr) {
-//   let count = 0;
-//   for (let index in arr) {
-//     count++;
-//   }
-// }
-// getArrayLength(arr);
+function getArrayLength(arr) {
+  let count = 0;
+  for (let index in arr) {
+    count++;
+  }
+}
+getArrayLength(arr);
