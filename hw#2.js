@@ -23,12 +23,15 @@ var row = ["Hello Michael, chek my hw pls"];
 var letter = "h";
 
 function countH(row) {
-  if (
-    typeof row[0] !== "string" || row[0].trim() === "" || !Array.isArray(row) || row.length === 0)
+  if (typeof row[0] !== "string" || row[0].trim() === "" || !Array.isArray(row) || row.length === 0) {
     return "Некорректный ввод";
+  }
   var count = 0;
-  for (var i = 0; i < row[0].length; i++)
-    if (row[0][i].toLowerCase() === letter) count++;
+  for (var i = 0; i < row[0].length; i++) {
+    if (row[0][i].toLowerCase() === letter) {
+      count++;
+    }
+  }
   return count;
 }
 
