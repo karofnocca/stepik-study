@@ -19,7 +19,7 @@ console.log(finalSum(num, target));
 
 //alg #2 if we need find count of any letter
 
-var row = "Hello Michael, chek my hw pls";
+var row = "Hello Michael, check my hw pls";
 var letter = "h";
 
 function countH(row) {
