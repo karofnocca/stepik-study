@@ -50,3 +50,27 @@ function getArrayLength(arr) {
   return count;
 }
 console.log(getArrayLength(arr));
+
+//alg #4
+
+var words = [
+  "vvn",
+  "isjjsi",
+  "iytaare",
+  "wxys",
+  "vbbv",
+  "xumamux",
+  "zyqor",
+  "bthhtb",
+  "rcxrxcr",
+  "mpun",
+];
+function gerPalindromes(words) {
+  let palindromes = [];
+  for (let i = 0; i < words.length; i++) {
+    if (words[i] === words[i].split("").reverse().join("")) {
+      palindromes.push(words[i]);
+    }
+  }
+  return palindromes;
+}
