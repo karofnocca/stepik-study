@@ -19,7 +19,7 @@ console.log(finalSum(num, target));
 
 //alg #2 if we need find count of any letter
 
-var row = "Hello Michael, check my hw pls";
+var row = "Hello Michael, chek my hw pls";
 var letter = "h";
 
 function countH(row) {
@@ -62,13 +62,25 @@ console.log(countH(row));
 
 //alg #2 if we need find count of "space"
 
-var string = ["Hello my friend! How're you! I am fine, thx"];
-
-function countH(string) {
+var row = "Hello Michael, chek my hw pls";
+var letter = " ";
+function countH(row) {
+  if (typeof row !== "string" && !Array.isArray(row)) {
+    return "Это не массив и не строка";
+  }
   var count = 0;
-  for (var str of string) {
-    for (var char of str) {
-      if (char === " ") {
+  if (Array.isArray(row)) {
+    for (var i = 0; i < row.length; i++) {
+      var str = row[i];
+      for (var j = 0; j < str.length; j++) {
+        if (str[j].toLowerCase() === letter) {
+          count++;
+        }
+      }
+    }
+  } else {
+    for (var i = 0; i < row.length; i++) {
+      if (row[i].toLowerCase() === letter) {
         count++;
       }
     }
@@ -76,7 +88,7 @@ function countH(string) {
   return count;
 }
 
-console.log(countH(string));
+console.log(countH(row));
 
 // alg #3
 
