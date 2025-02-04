@@ -2,7 +2,7 @@
 
 //alg1
 
-var num = [10, 33, 22, 28, 29, 30, 40];
+var num = [10, 22, 28, 29, 30, 40];
 var target = 54;
 var maxValue = Infinity;
 var resultPair = [];
