@@ -1,1 +1,1 @@
-# stepik-styde
+# JS-styde
