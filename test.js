@@ -55,18 +55,10 @@ console.log(arrayToObject(arr4));
 //#5
 
 const calculator = {
-  add: function (a, b) {
-    return a + b;
-  },
-  subtract: function (a, b) {
-    return a - b;
-  },
-  multiply: function (a, b) {
-    return a * b;
-  },
-  divide: function (a, b) {
-    return b !== 0 ? a / b : "Error! Division by zero.";
-  },
+  add: (a, b) => a + b,
+  subtract: (a, b) => a - b,
+  multiply: (a, b) => a * b,
+  divide: (a, b) => (b !== 0 ? a / b : "Error! Division by zero."),
 };
 
 console.log(calculator.add(5, 3));
